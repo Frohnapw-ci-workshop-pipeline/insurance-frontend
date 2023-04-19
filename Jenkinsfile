@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
           agent any
           options {
-            timeout(time: 10, unit: 'SECONDS') 
+            timeout(time: 60, unit: 'SECONDS') 
           }
           environment {
             FAVORITE_COLOR = 'BLUE'
