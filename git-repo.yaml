@@ -1,0 +1,11 @@
+apiVersion: environment.cloudbees.com/v1alpha1
+kind: GitRepository
+metadata:
+  name: frohnapw-ci-workshop-pipeline-insurance-frontend                             
+  namespace: previews
+spec:
+  url: https://github.com/Frohnapw-ci-workshop-pipeline/insurance-frontend.git
+  apiTokenSecretRef:
+    name: beedemo-dev-github-token
+  autoUpdateContexts:                           
+  - default
